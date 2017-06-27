@@ -80,18 +80,7 @@ class AddCharacter extends React.Component {
                            onChange={AddCharacterActions.updateArtist} autoFocus/>
                     <span className='help-block'>{this.state.helpBlock}</span>
                   </div>
-                  <div className={'form-group ' + this.state.genderValidationState}>
-                    <div className='radio radio-inline'>
-                      <input type='radio' name='gender' id='female' value='Female' checked={this.state.gender === 'Female'}
-                             onChange={AddCharacterActions.updateGender}/>
-                      <label htmlFor='female'>Female</label>
-                    </div>
-                    <div className='radio radio-inline'>
-                      <input type='radio' name='gender' id='male' value='Male' checked={this.state.gender === 'Male'}
-                             onChange={AddCharacterActions.updateGender}/>
-                      <label htmlFor='male'>Male</label>
-                    </div>
-                  </div>
+
                   <div className={'form-group ' + this.state.genreValidationState}>
                     <div className='radio radio-inline'>
                       <input type='radio' name='genre' id='Pop' value='Pop' checked={this.state.genre === 'Pop'}
