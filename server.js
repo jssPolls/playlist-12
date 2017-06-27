@@ -338,10 +338,9 @@ app.get('/api/characters/:id', function(req, res, next) {
  * Adds new character to the database.
  */
 app.post('/api/characters', function(req, res, next) {
-  var gender = req.body.gender;
+  var genre = req.body.genre;
   var characterName = req.body.name;
-  var characterYear = req.body.year;
-  var characterBranch = req.body.branch;
+  var characterArtist = req.body.artist;
   var characterUrl = req.body.url;
   var rating = 10;
   var characterIdLookupUrl = 'https://api.eveonline.com/eve/CharacterID.xml.aspx?names=' + characterName;
@@ -377,18 +376,17 @@ app.post('/api/characters', function(req, res, next) {
       
              var name = characterName;
             //var race = parsedXml.eveapi.result[0].race[0];
-            var year = characterYear;
-            var branch = characterBranch;
+            var genre = characterGenre;
+            var artist = characterArtisr;
             var url = characterUrl;
             //16var bloodline = parsedXml.eveapi.result[0].bloodline[0];
 
             var character = new Character({
               characterId: name,
               name: name,
-              year: year,
-              branch: branch,
+              artist: artist,
+              genre: genre,
               url: url,
-              gender: gender,
               rating: rating,
               random: [Math.random(), 0]
             });
