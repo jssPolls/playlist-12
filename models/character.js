@@ -4,7 +4,7 @@ var characterSchema = new mongoose.Schema({
   characterId: { type: String, unique: true, index: true },
   name: String,
   artist: String,
-  gender: String,
+  genre: String,
   url: String,
   rating: Number,
   bloodline: String,
