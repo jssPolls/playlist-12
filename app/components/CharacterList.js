@@ -37,6 +37,7 @@ class CharacterList extends React.Component {
         this.props.rel + "&modestbranding=" +
         this.props.modest;
     let charactersList = this.state.characters.map((character, index) => {
+      var videoSrc = "https://www.youtube.com/watch?v=FA3Co8pbNq0"
       return (
 
         <div key={character.characterId} className='list-group-item animated fadeIn'>
@@ -44,7 +45,7 @@ class CharacterList extends React.Component {
             <span className='position pull-left'>{index + 1}</span>
 
             <div className='pull-left thumb-lg'>
-<iframe width="300" height="200" src={character.url} frameborder="0"></iframe>
+<iframe width="300" height="200" src=videoSrc frameborder="0"></iframe>
             </div>
 
             <div className='media-body'>
