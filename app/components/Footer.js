@@ -40,9 +40,9 @@ class Footer extends React.Component {
         <div className='container'>
           <div className='row'>
             <div className='col-sm-5'>
-              <h3 className='lead'><strong>Voting</strong> and <strong>adding persons</strong></h3>
-              <p><strong>still is ANONYMOUS</strong></p>
-      <p>Zealicon 2k17</p>
+              <h3 className='lead'>Add your favourite songs from the 90's</h3>
+              <p><strong></strong></p>
+      <p>2k17</p>
            <p>Follow us on <a href="https://www.facebook.com/jsspolls/">Facebook</a></p>
               
             </div>
