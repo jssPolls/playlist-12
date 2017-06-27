@@ -116,9 +116,9 @@ class AddCharacter extends React.Component {
                       <label htmlFor='Bollywood'>Bollywood</label>
                     </div>
                   </div>
-                  <div>                  <button type='submit' className='btn btn-primary'>Submit</button>
-</div>
-
+                  <div>    
+                        <button type='submit' className='btn btn-primary'>Submit</button>
+                  </div>
                 </form>
               </div>
             </div>
