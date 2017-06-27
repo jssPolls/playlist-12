@@ -45,8 +45,9 @@ class CharacterList extends React.Component {
           <div className='media'>
             <span className='position pull-left'>{index + 1}</span>
 
-            <div>
-<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />            </div>
+            <div className='media-body'>
+                <iframe id="iframe" src={character.url} frameborder="0"></iframe>
+         </div>
 
             <div className='media-body'>
               <h4 className='media-heading'>
