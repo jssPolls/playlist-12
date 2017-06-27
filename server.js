@@ -458,27 +458,27 @@ app.get('/api/stats', function(req, res, next) {
         });
       },
       function(callback) {
-        Character.count({ race: 'Amarr' }, function(err, amarrCount) {
+        Character.count({ genre: 'Rock' }, function(err, amarrCount) {
           callback(err, amarrCount);
         });
       },
       function(callback) {
-        Character.count({ race: 'Caldari' }, function(err, caldariCount) {
+        Character.count({ race: 'Pop' }, function(err, caldariCount) {
           callback(err, caldariCount);
         });
       },
       function(callback) {
-        Character.count({ race: 'Gallente' }, function(err, gallenteCount) {
+        Character.count({ race: 'Hip-Hop' }, function(err, gallenteCount) {
           callback(err, gallenteCount);
         });
       },
       function(callback) {
-        Character.count({ race: 'Minmatar' }, function(err, minmatarCount) {
+        Character.count({ race: 'Bollywood' }, function(err, minmatarCount) {
           callback(err, minmatarCount);
         });
       },
       function(callback) {
-        Character.count({ gender: 'Male' }, function(err, maleCount) {
+        Character.count({ gender: 'Classical' }, function(err, maleCount) {
           callback(err, maleCount);
         });
       },
