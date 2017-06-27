@@ -5,14 +5,13 @@ class AddCharacterStore {
   constructor() {
     this.bindActions(AddCharacterActions);
     this.name = '';
-    this.gender = '';
-    this.year = '';
-    this.branch = '';
+    this.artist = '';
+    this.genre = '';
     this.helpBlock = '';
     this.nameValidationState = '';
-    this.genderValidationState = '';
-    this.yearValidationState = '';
-    this.branchValidationState = '';
+    this.artistValidationState = '';
+    this.genreValidationState = '';
+//     this.branchValidationState = '';
     this.urlValidationState = '';
   }
 
@@ -32,20 +31,20 @@ class AddCharacterStore {
     this.helpBlock = '';
   }
 
-  onUpdateGender(event) {
-    this.gender = event.target.value;
-    this.genderValidationState = '';
+  onUpdateArtist(event) {
+    this.artist = event.target.value;
+    this.artistValidationState = '';
   }
   
-  onUpdateYear(event) {
-    this.year = event.target.value;
-    this.yearValidationState = '';
+  onUpdateGenre(event) {
+    this.genre = event.target.value;
+    this.genreValidationState = '';
   }
   
-  onUpdateBranch(event) {
-    this.branch = event.target.value;
-    this.branchValidationState = '';
-  }
+//   onUpdateBranch(event) {
+//     this.branch = event.target.value;
+//     this.branchValidationState = '';
+//   }
   
   onUpdateUrl(event) {
     this.url = event.target.value;
@@ -57,7 +56,7 @@ class AddCharacterStore {
     this.helpBlock = 'Please enter a character name.';
   }
 
-  onInvalidGender() {
+  onInvalidArtist() {
     this.genderValidationState = 'has-error';
   }
   
