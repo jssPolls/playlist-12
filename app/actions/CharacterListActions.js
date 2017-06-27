@@ -11,19 +11,19 @@ class CharacterListActions {
   getCharacters(payload) {
     let url = '/api/characters/top';
     let params = {
-      race: payload.race,
+      genre: payload.genre,
       bloodline: payload.bloodline
     };
 
-    if (payload.category === 'Pop') {
+    if (payload.genre === 'Pop') {
       params.genre = 'Pop';
-    } else if (payload.category === 'Rock') {
+    } else if (payload.genre === 'Rock') {
       params.genre = 'Rock';
-    } else if (payload.category === 'Classical') {
+    } else if (payload.genre === 'Classical') {
       params.genre = 'Classical';
-    } else if (payload.category === 'Bollywood') {
+    } else if (payload.genre === 'Bollywood') {
       params.genre = 'Bollywood';
-    } else if (payload.category === 'Hip-Hop') {
+    } else if (payload.genre === 'Hip-Hop') {
       params.genre = 'Hip-Hop';
     }
     
