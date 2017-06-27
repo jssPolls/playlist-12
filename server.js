@@ -41,12 +41,12 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Returns 2 random characters of the same gender that have not been voted yet.
  */
 app.get('/api/characters', function(req, res, next) {
-  var choices = ['Rock', 'Pop', 'Classical', 'Hip-Hop, 'Bollywood'];
+  var choices = ['Rock', 'Pop', 'Classical', 'Hip-Hop'];
   var randomGenre = _.sample(choices);
 
   Character.find({ random: { $near: [Math.random(), 0] } })
     .where('voted', false)
-    .where('genre', randomGender)
+    .where('genre', randomGenre)
     .limit(6)
     .exec(function(err, characters) {
       if (err) return next(err);
