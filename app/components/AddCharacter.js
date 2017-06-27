@@ -116,6 +116,8 @@ class AddCharacter extends React.Component {
                       <label htmlFor='Bollywood'>Bollywood</label>
                     </div>
                   </div>
+                  <div>                  <button type='submit' className='btn btn-primary'>Submit</button>
+</div>
 //                   <div className={'form-group ' + this.state.branchValidationState}>
 //                     <div className='radio radio-inline'>
 //                       <input type='radio' name='branch' id='CS' value='CS' checked={this.state.branch === 'CS'}
@@ -158,7 +160,6 @@ class AddCharacter extends React.Component {
 //                       <label htmlFor='ME'>ME</label>
 //                     </div>
 //                  </div>
-                  <button type='submit' className='btn btn-primary'>Submit</button>
                 </form>
               </div>
             </div>
