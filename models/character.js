@@ -3,10 +3,8 @@ var mongoose = require('mongoose');
 var characterSchema = new mongoose.Schema({
   characterId: { type: String, unique: true, index: true },
   name: String,
-  race: String,
+  artist: String,
   gender: String,
-  branch: String,
-  year: String,
   url: String,
   rating: Number,
   bloodline: String,
