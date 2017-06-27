@@ -6,21 +6,21 @@ class AddCharacterActions {
       'addCharacterSuccess',
       'addCharacterFail',
       'updateName',
-      'updateGender',
-      'updateYear',
-      'updateBranch',
+      'updateArtist',
+      'updateGenre',
+//       'updateBranch',
       'updateUrl',
       'invalidUrl',
       'invalidName',
-      'invalidGender'
+      'invalidArtist'
     );
   }
 
-  addCharacter(name, gender, year, branch, url) {
+  addCharacter(name, artist, genre, url) {
     $.ajax({
       type: 'POST',
       url: '/api/characters',
-      data: { name: name, gender: gender, year: year, branch: branch,rating: 10, url }
+      data: { name: name, artist: artist, genre: genre, url }
     })
       .done((data) => {
         this.actions.addCharacterSuccess(data.message);
