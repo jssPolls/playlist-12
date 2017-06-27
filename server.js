@@ -41,31 +41,31 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Returns 2 random characters of the same gender that have not been voted yet.
  */
 app.get('/api/characters', function(req, res, next) {
-  var choices = ['Female', 'Male'];
-  var randomGender = _.sample(choices);
+  var choices = ['Rock', 'Pop', 'Classical', 'Hip-Hop, 'Bollywood'];
+  var randomGenre = _.sample(choices);
 
   Character.find({ random: { $near: [Math.random(), 0] } })
     .where('voted', false)
-    .where('gender', randomGender)
-    .limit(2)
+    .where('genre', randomGender)
+    .limit(6)
     .exec(function(err, characters) {
       if (err) return next(err);
 
-      if (characters.length === 2) {
+      if (characters.length === 12) {
         return res.send(characters);
       }
 
-      var oppositeGender = _.first(_.without(choices, randomGender));
+      var oppositeGender = _.first(_.without(choices, randomGenre));
 
       Character
         .find({ random: { $near: [Math.random(), 0] } })
         .where('voted', false)
-        .where('gender', oppositeGender)
-        .limit(2)
+        .where('genre', oppositeGender)
+        .limit(6)
         .exec(function(err, characters) {
           if (err) return next(err);
 
-          if (characters.length === 2) {
+          if (characters.length === 6) {
             return res.send(characters);
           }
 
@@ -82,8 +82,8 @@ app.get('/api/characters', function(req, res, next) {
  * GET /api/characters
  * Returns 2 random characters of the male gender that have not been voted yet.
  */
-app.get('/api/characters/males', function(req, res, next) {
-  var choices = ['Male'];
+app.get('/api/characters/rock', function(req, res, next) {
+  var choices = ['Rock'];
   var randomGender = 'Male';
 
   Character.find({ random: { $near: [Math.random(), 0] } })
