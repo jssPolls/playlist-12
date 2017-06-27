@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 import {Link} from 'react-router';
 import {isEqual} from 'underscore';
 import CharacterListStore from '../stores/CharacterListStore';
