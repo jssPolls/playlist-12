@@ -118,48 +118,7 @@ class AddCharacter extends React.Component {
                   </div>
                   <div>                  <button type='submit' className='btn btn-primary'>Submit</button>
 </div>
-//                   <div className={'form-group ' + this.state.branchValidationState}>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='CS' value='CS' checked={this.state.branch === 'CS'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='CS'>CS</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='EC' value='EC' checked={this.state.branch === 'EC'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='EC'>EC</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='EE' value='EE' checked={this.state.branch === 'EE'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='EE'>EE</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='CE' value='CE' checked={this.state.branch === 'CE'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='CE'>CE</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='EEE' value='EEE' checked={this.state.branch === 'EEE'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='EEE'>EEE</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='IC' value='IC' checked={this.state.branch === 'IC'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='IC'>IC</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='IT' value='IT' checked={this.state.branch === 'IT'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='IT'>IT</label>
-//                     </div>
-//                     <div className='radio radio-inline'>
-//                       <input type='radio' name='branch' id='ME' value='ME' checked={this.state.branch === 'ME'}
-//                              onChange={AddCharacterActions.updateBranch}/>
-//                       <label htmlFor='ME'>ME</label>
-//                     </div>
-//                  </div>
+
                 </form>
               </div>
             </div>
