@@ -339,7 +339,7 @@ app.get('/api/characters/:id', function(req, res, next) {
  */
 app.post('/api/characters', function(req, res, next) {
   var characterName = req.body.name;
-  var genre = req.body.genre;
+  var characterGenre = req.body.genre;
   var characterArtist = req.body.artist;
   var characterUrl = req.body.url;
   var rating = 10;
@@ -376,7 +376,7 @@ app.post('/api/characters', function(req, res, next) {
       
              var name = characterName;
             //var race = parsedXml.eveapi.result[0].race[0];
-            var genre = genre;
+            var genre = characterGenre;
             var artist = characterArtist;
             var url = characterUrl;
             //16var bloodline = parsedXml.eveapi.result[0].bloodline[0];
