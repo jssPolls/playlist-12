@@ -15,15 +15,15 @@ class CharacterListActions {
       bloodline: payload.bloodline
     };
 
-    if (payload.genre === 'Pop') {
+    if (payload.category === 'Pop') {
       params.genre = 'Pop';
-    } else if (payload.genre === 'Rock') {
+    } else if (payload.category === 'Rock') {
       params.genre = 'Rock';
-    } else if (payload.genre === 'Classical') {
+    } else if (payload.category === 'Classical') {
       params.genre = 'Classical';
-    } else if (payload.genre === 'Bollywood') {
+    } else if (payload.category === 'Bollywood') {
       params.genre = 'Bollywood';
-    } else if (payload.genre === 'Hip-Hop') {
+    } else if (payload.category === 'Hip-Hop') {
       params.genre = 'Hip-Hop';
     }
     
