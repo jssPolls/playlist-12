@@ -33,6 +33,7 @@ class CharacterList extends React.Component {
   render() {
     let charactersList = this.state.characters.map((character, index) => {
       return (
+
         <div key={character.characterId} className='list-group-item animated fadeIn'>
           <div className='media'>
             <span className='position pull-left'>{index + 1}</span>
@@ -41,6 +42,27 @@ class CharacterList extends React.Component {
                 <img className='media-object' src={character.url} />
               </Link>
             </div>
+                var YouTube = React.createClass({
+  render: function() {
+    var videoSrc = {character.url} + 
+        this.props.video + "?autoplay=" + 
+        this.props.autoplay + "&rel=" + 
+        this.props.rel + "&modestbranding=" +
+        this.props.modest;
+    return (
+      <div className="container">
+        <iframe className="player" type="text/html" width="20%" height="20%"
+  src={videoSrc}
+  frameborder="0"/>
+      </div>
+    );
+  }
+});
+
+React.render(
+  <YouTube video="mYFaghHyMKc" autoplay="0" rel="0" modest="1" />,
+  document.body
+);
             <div className='media-body'>
               <h4 className='media-heading'>
                 <Link to={'/characters/' + character.characterId}>{character.name}</Link>
