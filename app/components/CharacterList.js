@@ -31,7 +31,7 @@ class CharacterList extends React.Component {
   }
 
   render() {
-        var videoSrc = {character.url} + 
+        var videoSrc = "https://www.youtube.com/watch?v=FA3Co8pbNq0" + 
         this.props.video + "?autoplay=" + 
         this.props.autoplay + "&rel=" + 
         this.props.rel + "&modestbranding=" +
