@@ -51,13 +51,15 @@ class Home extends React.Component {
     
     var characterNodes = this.state.characters.map((character, index) => {
       return (
-        <div key={character.characterId} className={index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'}>
+        <div key={character.characterId} className={index === 0 ? 'col-xs-3 col-sm-3 col-md-2 col-md-offset-1' : 'col-xs-3 col-sm-3 col-md-2'}>
           <div className='thumbnail fadeInUp animated'>
-            <img onClick={this.handleClick.bind(this, character)} src={character.url}/>
+//             <img onClick={this.handleClick.bind(this, character)} src={character.url}/>
+             <iframe width="110" height="90" src="https://www.youtube.com/embed/BBnN5VLuxKw" frameborder="0"></iframe>
+
             <div className='caption text-center'>
               <ul className='list-inline'>
-                <li><strong>Year:</strong> {character.year}</li>
-                <li><strong>Branch:</strong> {character.branch}</li>
+                <li><strong>Year:</strong> {character.artist}</li>
+                <li><strong>Branch:</strong> {character.genre}</li>
               </ul>
               <h4>
                 <Link to={'/characters/' + character.characterId}><strong>{character.name}</strong></Link>
@@ -70,7 +72,6 @@ class Home extends React.Component {
 
     return (
       <div className='container' style={ sectionStyle }>
-        <h3 className='text-center'>Who do you think should be Mr. or Ms. Zealicon 2017?</h3>
         <div className='row'>
           {characterNodes}
         </div>
