@@ -45,8 +45,7 @@ class CharacterList extends React.Component {
             <span className='position pull-left'>{index + 1}</span>
             <div className='media-body'>
             <div>
-        <iframe width="110" height="85" src="https://www.youtube.com/watch?v=YQHsXMglC9A" frameborder="0"></iframe>
-            </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A" frameborder="0" allowfullscreen></iframe>            </div>
               <h4 className='media-heading'>
                 <Link to={'/characters/' + character.characterId}>{character.name}</Link>
               </h4>
