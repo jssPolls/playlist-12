@@ -377,7 +377,7 @@ app.post('/api/characters', function(req, res, next) {
              var name = characterName;
             //var race = parsedXml.eveapi.result[0].race[0];
             var genre = characterGenre;
-            var artist = characterArtisr;
+            var artist = characterArtist;
             var url = characterUrl;
             //16var bloodline = parsedXml.eveapi.result[0].bloodline[0];
 
