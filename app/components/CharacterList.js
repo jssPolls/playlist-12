@@ -42,7 +42,7 @@ class CharacterList extends React.Component {
         <div key={character.characterId} className='list-group-item animated fadeIn'>
           <div className='media'>
             <span className='position pull-left'>{index + 1}</span>
-                <iframe id="iframe" src={character.url} frameborder="0"></iframe>
+                <iframe id="iframe" src="https://www.youtube.com/watch?v=FA3Co8pbNq0" frameborder="0"></iframe>
 
             <div className='pull-left thumb-lg'>
               <Link to={'/characters/' + character.characterId}>
