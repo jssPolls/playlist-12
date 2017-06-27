@@ -338,8 +338,8 @@ app.get('/api/characters/:id', function(req, res, next) {
  * Adds new character to the database.
  */
 app.post('/api/characters', function(req, res, next) {
-  var genre = req.body.genre;
   var characterName = req.body.name;
+  var genre = req.body.genre;
   var characterArtist = req.body.artist;
   var characterUrl = req.body.url;
   var rating = 10;
