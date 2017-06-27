@@ -157,7 +157,7 @@ class AddCharacter extends React.Component {
 //                              onChange={AddCharacterActions.updateBranch}/>
 //                       <label htmlFor='ME'>ME</label>
 //                     </div>
-                  </div>
+//                  </div>
                   <button type='submit' className='btn btn-primary'>Submit</button>
                 </form>
               </div>
