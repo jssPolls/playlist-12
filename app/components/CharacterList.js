@@ -44,7 +44,7 @@ class CharacterList extends React.Component {
           <div className='media'>
             <span className='position pull-left'>{index + 1}</span>
             <div className='media-body'>
-            <div className='pull-left thumb-lg'>
+            <div>
         <iframe width="110" height="85" src="https://www.youtube.com/watch?v=YQHsXMglC9A" frameborder="0"></iframe>
             </div>
               <h4 className='media-heading'>
