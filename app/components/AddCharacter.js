@@ -44,6 +44,9 @@ class AddCharacter extends React.Component {
         if (!url) {
       AddCharacterActions.invalidUrl();
     }
+            if (!genre) {
+      AddCharacterActions.invalidGenre();
+    }
 
     if (name && artist && genre && url) {
       AddCharacterActions.addCharacter(name, artist, genre, url);
