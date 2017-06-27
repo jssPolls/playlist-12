@@ -50,7 +50,8 @@ class CharacterList extends React.Component {
               <small>Genre: <strong>{character.genre}</strong></small>
               <br />
 //               <small>Wins: <strong>{character.wins}</strong> Losses: <strong>{character.losses}</strong>Rating: <strong>{character.rating}</strong></small>
-            </div>
+        <small>Youtube URL: <a>{character.url}</a></small>    
+        </div>
           </div>
         </div>
       );
