@@ -119,7 +119,46 @@ class Navbar extends React.Component {
                 <li><Link to='/Hip-Hop'>Hip-Hop</Link></li>
               </ul>
             </li>
-            
+                        <li className='dropdown'>
+              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Pop <span className='caret'></span></a>
+              <ul className='dropdown-menu'>
+                <li><Link to='/pop'>All</Link></li>
+
+
+              </ul>
+            </li>
+            <li className='dropdown'>
+              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Classical <span className='caret'></span></a>
+              <ul className='dropdown-menu'>
+                <li><Link to='/classical'>All</Link></li>
+                                 
+              </ul>
+
+            </li>
+            <li className='dropdown'>
+              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Rock <span className='caret'></span></a>
+              <ul className='dropdown-menu'>
+                <li><Link to='/rock'>All</Link></li>
+                                 
+              </ul>
+
+            </li>
+            <li className='dropdown'>
+              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Hip-Hop <span className='caret'></span></a>
+              <ul className='dropdown-menu'>
+                <li><Link to='/hiphop'>All</Link></li>
+                                 
+              </ul>
+
+            </li>
+            <li className='dropdown'>
+              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Bollywood <span className='caret'></span></a>
+              <ul className='dropdown-menu'>
+                <li><Link to='/bollywood'>All</Link></li>
+                                 
+              </ul>
+
+            </li>
 
           </ul>
         </div>
