@@ -12,7 +12,8 @@ class AddCharacterActions {
       'updateUrl',
       'invalidUrl',
       'invalidName',
-      'invalidArtist'
+      'invalidArtist',
+      'invalidGenre'
     );
   }
 
