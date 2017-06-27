@@ -15,11 +15,18 @@ class CharacterListActions {
       bloodline: payload.bloodline
     };
 
-    if (payload.category === 'female') {
-      params.gender = 'female';
-    } else if (payload.category === 'male') {
-      params.gender = 'male';
+    if (payload.category === 'Pop') {
+      params.genre = 'Pop';
+    } else if (payload.category === 'Rock') {
+      params.genre = 'Rock';
+    } else if (payload.category === 'Classical') {
+      params.genre = 'Classical';
+    } else if (payload.category === 'Bollywood') {
+      params.genre = 'Bollywood';
+    } else if (payload.category === 'Hip-Hop') {
+      params.genre = 'Hip-Hop';
     }
+    
 
     if (payload.category === 'shame') {
       url = '/api/characters/shame';
