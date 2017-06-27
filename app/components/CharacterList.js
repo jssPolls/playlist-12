@@ -45,11 +45,11 @@ class CharacterList extends React.Component {
               <h4 className='media-heading'>
                 <Link to={'/characters/' + character.characterId}>{character.name}</Link>
               </h4>
-              <small>Year: <strong>{character.year}</strong></small>
+              <small>Artist: <strong>{character.artist}</strong></small>
               <br />
-              <small>Branch: <strong>{character.branch}</strong></small>
+              <small>Genre: <strong>{character.genre}</strong></small>
               <br />
-              <small>Wins: <strong>{character.wins}</strong> Losses: <strong>{character.losses}</strong>Rating: <strong>{character.rating}</strong></small>
+//               <small>Wins: <strong>{character.wins}</strong> Losses: <strong>{character.losses}</strong>Rating: <strong>{character.rating}</strong></small>
             </div>
           </div>
         </div>
