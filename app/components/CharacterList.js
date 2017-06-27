@@ -45,7 +45,7 @@ class CharacterList extends React.Component {
 
             <div className='pull-left thumb-lg'>
               <Link to={'/characters/' + character.characterId}>
-<iframe width="300" height="200" src="{character.url}" frameborder="0"></iframe>
+<iframe width="300" height="200" src="character.url" frameborder="0"></iframe>
               </Link>
             </div>
 
