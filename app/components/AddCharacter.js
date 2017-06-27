@@ -25,9 +25,8 @@ class AddCharacter extends React.Component {
     event.preventDefault();
 
     var name = this.state.name.trim();
-    var gender = this.state.gender;
-    var year = this.state.year;
-    var branch = this.state.branch;
+    var artist = this.state.artist;
+    var genre = this.state.genre;
     var url = this.state.url;
     var rating = 10;
 
@@ -38,15 +37,15 @@ class AddCharacter extends React.Component {
       this.refs.nameTextField.focus();
     }
 
-    if (!gender) {
-      AddCharacterActions.invalidGender();
+    if (!artist) {
+      AddCharacterActions.invalidArtist();
     }
     
         if (!url) {
       AddCharacterActions.invalidUrl();
     }
 
-    if (name && artist && gemre && url) {
+    if (name && artist && genre && url) {
       AddCharacterActions.addCharacter(name, artist, genre, url);
     }
   }
@@ -72,6 +71,7 @@ class AddCharacter extends React.Component {
                            onChange={AddCharacterActions.updateUrl} autoFocus/>
                     <span className='help-block'>{this.state.helpBlock}</span>
                   </div>
+                  <div className={'form-group ' + this.state.artistValidationState}>
                     <label className='control-label'>Artist</label>
                     <input type='text' className='form-control' ref='artistTextField' value={this.state.artist}
                            onChange={AddCharacterActions.updateArtist} autoFocus/>
