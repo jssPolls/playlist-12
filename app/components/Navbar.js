@@ -107,28 +107,19 @@ class Navbar extends React.Component {
             <li className='dropdown'>
               <a href='#' className='dropdown-toggle' data-toggle='dropdown'>See Only<span className='caret'></span></a>
               <ul className='dropdown-menu'>
-                <li><Link to='/males'>Male</Link></li>
+                <li><Link to='/rock'>Rock</Link></li>
 
                 <li className='/divider'></li>
-                <li><Link to='/females'>Female</Link></li>
+                <li><Link to='/pop'>Pop</Link></li>
+                <li className='/divider'></li>
+                <li><Link to='/classical'>Classical</Link></li>
+                <li className='/divider'></li>
+                <li><Link to='/bollywood'>Bollywood</Link></li>
+                <li className='/divider'></li>
+                <li><Link to='/Hip-Hop'>Hip-Hop</Link></li>
               </ul>
             </li>
-            <li className='dropdown'>
-              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Female <span className='caret'></span></a>
-              <ul className='dropdown-menu'>
-                <li><Link to='/female'>All</Link></li>
-
-
-              </ul>
-            </li>
-            <li className='dropdown'>
-              <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Male <span className='caret'></span></a>
-              <ul className='dropdown-menu'>
-                <li><Link to='/male'>All</Link></li>
-                                 
-              </ul>
-
-            </li>
+            
 
           </ul>
         </div>
