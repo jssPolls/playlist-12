@@ -36,15 +36,27 @@ class Stats extends React.Component {
 
 
             <tr>
-              <td>Female characters</td>
-              <td>{this.state.femaleCount}</td>
+              <td>Rock</td>
+              <td>{this.state.rockCount}</td>
             </tr>
             <tr>
-              <td>Male characters</td>
-              <td>{this.state.maleCount}</td>
+              <td>Bollywood</td>
+              <td>{this.state.bollywoodCount}</td>
             </tr>
             <tr>
-              <td>Total number of characters</td>
+              <td>Pop</td>
+              <td>{this.state.popCount}</td>
+            </tr>
+            <tr>
+              <td>Hip-Hop</td>
+              <td>{this.state.hipCount}</td>
+            </tr>
+                  <tr>
+              <td>Classical</td>
+              <td>{this.state.classicalCount}</td>
+            </tr>
+            <tr>
+              <td>Total number of songs</td>
               <td>{this.state.totalCount}</td>
             </tr>
             </tbody>
